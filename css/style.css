@@ -179,6 +179,32 @@ h2{
   height: auto;
   padding: 0 25px;
 }
+.grid-4{
+  background: linear-gradient(rgba(72, 77, 109,.7) 100%, rgba(72, 77, 109, .7) 100%), url(../img/research.jpg) 0 0 no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  text-align: center;
+  padding: 150px;
+  text-shadow: 4px 4px 4px rgba(0,0,0,.6);
+}
+.grid-4 > p{
+  font-size: 4rem;
+  line-height: 6rem;
+  margin: 20px;
+}
+.grid-4>h3{
+  font-size: 5rem;
+  margin: 30px;
+}
+.btn{
+  padding:10px 20px;
+  background:linear-gradient(#4B8F8C, #234341);
+  border: 5px solid #2B193D;
+  border-radius: 20px; 
+}
+.btn:hover {
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,.5);
+}
 
 /******************************************
 /* ADDITIONAL STYLES
