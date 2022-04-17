@@ -59,6 +59,10 @@ table {
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+/* *******************************************
+BASE STYLES
+******************************************* */
 html{
   font-size: 62.5%;
 }
@@ -69,58 +73,65 @@ body{
 }
 .flex{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 5rem;
+  line-height: 7.5rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(0,0,0,.6);
+}
+h1{
+  padding: 250px 20%;
+}
+h2{
+  margin: 15px 0; 
 }
 a{
   text-decoration: none;
   color: white;
   cursor: pointer;
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 3px rgba(0,0,0,.8);
 }
-.wrapper{
-  margin: 0 auto;
-  
+p{
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  text-shadow:5px 5px 5px rgba(0,0,0,.6);
+}
+a:hover{
+  text-shadow: 8px 8px 8px rgba(0,0,0,.4);
+}
+span{
+  font-size: 3rem;
 }
 
 nav{
   padding: 30px;
 }
-ul{
+
+/* *************************************************
+LAYOUT
+************************************************* */
+
+.navList{
   width: 50%;
   justify-content: space-around;
-  flex-wrap: wrap;
+ 
 }
 .main{
   background:linear-gradient(rgba(44, 54, 94,.6) 50% ,rgba(44, 54, 94,.7) 100%), url(../img/main.jpg) 0 50%  no-repeat;
   background-size: cover;
 }
-.navItem{
 
-}
-.navLink{
-  font-weight: 300;
-  font-size: 2.5rem;
-  text-shadow: 3px 3px 3px rgba(0,0,0,.8);
-
-}
-.navLink:hover{
-  text-shadow: 8px 8px 8px rgba(0,0,0,.4);
-}
-.grid-1{
+.grid-1,.grid-2,.grid-3,.grid-4{
   text-align: center;
   padding: 50px;
   
 }
-h1{
-  font-size: 5.5rem;
-  text-shadow: 5px 5px 5px rgba(0,0,0,.6);
-  padding: 250px 20%;
-}
-
-.main p{
-  font-weight: 300;
-  font-size: 3rem;
-  text-shadow:5px 5px 5px rgba(0,0,0,.6);
-}
-
 .statGrid{
   background: linear-gradient(#2B193D, rgba(72, 77, 109));
   box-shadow:inset 0 -30px 10px rgba(0,0,0,.5), inset 0 30px 10px rgba(0,0,0,.5);
@@ -128,51 +139,34 @@ h1{
   padding: 20px;
   transition: 1.5s ease-out;
 }
+/* Rising Effect for the Stats Grid */
 .statGrid:hover{
   transition: 1.5s ease-in-out;
   box-shadow: none;
- 
 }
 .statGrid>section{
   width: 33.3333%;
   padding: 50px 0;
   text-align: center;
 }
-.statGrid>section span{
+.statGrid .stats{
   display: block;
   padding: 20px;
   font-size: 6rem;
   text-shadow: 8px 8px 5px rgba(0,0,0,.7);
 }
-.statGrid>section>span:last-of-type{
-  font-size: 3rem;
-}
 .grid-3{
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
   padding: 50px;
   background:#4B8F8C;
 }
 .grid-3>section{
   flex:1;
   padding: 50px 70px;
-  text-align: center;
-  font-size: 3rem;
-  line-height: 4.5rem;
   text-shadow: 4px 4px 4px rgba(0,0,0,.5);
 }
 .grid-3 section p{
   margin: 40px 0;
-  line-height: 6rem;
   padding: 0 40px;
-}
-
-h2{
-  font-weight: bold;
-  font-size: 4rem;
-  margin: 15px 0;
-  line-height: 7rem;
 }
 .grid-3-iframe{
   width: 100%;
@@ -183,7 +177,6 @@ h2{
   background: linear-gradient(rgba(72, 77, 109,.7) 100%, rgba(72, 77, 109, .7) 100%), url(../img/research.jpg) 0 0 no-repeat;
   background-size: cover;
   flex-direction: column;
-  text-align: center;
   padding: 150px;
   text-shadow: 4px 4px 4px rgba(0,0,0,.6);
 }
@@ -193,18 +186,21 @@ h2{
   margin: 20px;
 }
 .grid-4>h3{
-  font-size: 5rem;
   margin: 30px;
 }
 .btn{
-  padding:10px 20px;
+  padding:15px 20px;
   background:linear-gradient(#4B8F8C, #234341);
   border: 5px solid #2B193D;
-  border-radius: 20px; 
+  border-radius: 20px;
+  font-size: 3.5rem;
+  font-weight: bold; 
 }
 .btn:hover {
   box-shadow: inset 5px 5px 5px rgba(0,0,0,.5);
 }
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
